@@ -3,7 +3,7 @@ import io from 'socket.io-client';
 import './App.css';
 import { CountdownCircleTimer } from 'react-countdown-circle-timer';
 let socket;
-const ENDPOINT = 'localhost:5000';
+const ENDPOINT = 'http://real-time-bidding-demo.herokuapp.com/';
 
 class App extends React.Component {
   state = {
