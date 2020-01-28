@@ -6,6 +6,11 @@ const router = require('./route');
 const PORT = process.env.PORT || 5000;
 const server = http.createServer(app);
 const io = socketio(server);
+const path = require("path")
+//
+//
+app.use(express.static(path.resolve(__dirname, "./build")))
+//
 
 const users = [];
 const addUser = ({ id, room }) => {
